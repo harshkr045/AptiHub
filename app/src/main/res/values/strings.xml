@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AptiHub</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="wrong_answers_0">Wrong Answers: 0</string>
+    <string name="date_of_birth_dd_mm_yyyy">Date of Birth (DD/MM/YYYY)</string>
+    <string name="female">Female</string>
+    <string name="username">Username</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="logout">LOGOUT</string>
+    <string name="email">Email</string>
+    <string name="delete_account">DELETE ACCOUNT</string>
+    <string name="select_the_difficulty_level_you_want_to_try">Select the difficulty level you want to try !!!</string>
+    <string name="email_address">Email Address</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="or">— OR —</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="welcome_to_aptihub">Welcome to AptiHub!</string>
+    <string name="tell_us_more_about_yourself">Tell us more about yourself</string>
+    <string name="male">Male</string>
+    <string name="other">Other</string>
+    <string name="save_and_continue">Save and Continue</string>
+    <string name="_0">0</string>
+</resources>

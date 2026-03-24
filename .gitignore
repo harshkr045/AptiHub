@@ -1,0 +1,25 @@
+# Android build outputs
+/build
+/captures
+*.apk
+*.aab
+
+# IDE files
+.idea/
+*.iml
+.gradle
+.externalNativeBuild
+.cxx
+*.log
+java_pid*.hprof
+
+# Local configuration
+local.properties
+.DS_Store
+
+# Keystore files
+*.jks
+*.keystore
+
+# Google services
+google-services.json

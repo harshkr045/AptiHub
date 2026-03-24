@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aptihub_level"
+    android:fitsSystemWindows="true"
+    tools:context=".QuizLevelActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#000000"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="Select Level"
+            app:titleTextColor="@color/cardview_light_background" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/select_the_difficulty_level_you_want_to_try"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar_layout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <Button
+            android:id="@+id/easy_button"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="#37B3E4"
+            android:fontFamily="@font/adlam_display"
+            android:text="@string/easy"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            tools:ignore="NewApi,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/medium_button"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="#2196F3"
+            android:fontFamily="@font/adlam_display"
+            android:text="@string/medium"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            tools:ignore="NewApi" />
+
+        <Button
+            android:id="@+id/hard_button"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="#3F51B5"
+            android:fontFamily="@font/adlam_display"
+            android:text="@string/hard"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            tools:ignore="NewApi" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

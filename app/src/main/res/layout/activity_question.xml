@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aptihub_level"
+    android:fitsSystemWindows="true"
+    tools:context=".QuestionActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Questions"
+        app:titleTextColor="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/stats_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <TextView
+            android:id="@+id/correct_answers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Correct: 0"
+            android:textColor="#FDFDFD"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/wrong_answers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wrong: 0"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timer: 60"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:text="Your question will appear here."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stats_layout"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/options_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/option1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/option_color"
+                android:text="Option 1"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="8dp"
+                tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/option2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/option_color"
+                android:text="Option 2"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="8dp"
+                tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,VisualLintButtonSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/option3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/option_color"
+                android:text="Option 3"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="8dp"
+                tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/option4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/option_color"
+                android:text="Option 4"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="8dp"
+                tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,VisualLintButtonSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/previous_button"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/adlam_display"
+            android:text="Prev"
+            android:textSize="14sp"
+            app:icon="@drawable/ic_arrow_back"
+            app:iconGravity="textStart"
+            tools:ignore="HardcodedText,RtlHardcoded,VisualLintButtonSize,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/skip_button"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/adlam_display"
+            android:text="SKIP"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,RtlHardcoded,VisualLintButtonSize,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/next_button"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:fontFamily="@font/adlam_display"
+            android:text="Next"
+            android:textSize="14sp"
+            app:icon="@drawable/ic_arrow_forward"
+            app:iconGravity="textEnd"
+            tools:ignore="HardcodedText,RtlHardcoded,VisualLintButtonSize" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

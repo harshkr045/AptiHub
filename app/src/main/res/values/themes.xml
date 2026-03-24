@@ -1,0 +1,19 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AptiHub" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="brandLogo">@drawable/brand_logo</item>
+    </style>
+
+    <style name="Theme.AptiHub" parent="Base.Theme.AptiHub" />
+
+    <style name="Toolbar.White" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="titleTextColor">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="CalendarDateTextAppearance" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>
